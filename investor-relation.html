@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About E-Nexco India</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/bootstrap2.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="about-us">
+    <!--------- Header Start --------->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="./"><img src="img/logo.png" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./service.html">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href=" javascript:void(0)"
+                  data-toggle="dropdown"
+                  >About E-Nexco</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./about-company-profile.html"
+                    >Company Profile</a
+                  >
+                  <a class="dropdown-item" href="./about-group-profile.html"
+                    >Nexco East Group Profile</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./investor-relation.html"
+                  >Investor Relation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--------- Header End --------->
+
+    <div class="marginTop-129"></div>
+    <section class="page-banner company-profile-banner ir-banner">
+      <div class="container">
+        <div class="page-banner-desc">
+          <h1>Investor Relation</h1>
+          <div class="bradcum">
+            <span>Home</span><span>Investor Relation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-message investor-relation_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-7 left">
+            <div class="back-text">Message</div>
+            <div class="wrap">
+              <h1>Investor Relation Report</h1>
+              <p>
+                <strong>E-nexco Pvt. Ltd</strong> is one of the top groups
+                involved in construction, management and operation. Our goal is
+                to export top-notch infrastructure in order to help provide
+                safe, secure, comfortable, and convenient road spaces abroad.
+                Our basic principles of social responsibility to the global
+                society via teamwork serve as our compass. Our vision is to
+                promote overseas business demonstrating the comprehensive
+                capabilities of the Nexco East group.
+              </p>
+              <a href="Signed.pdf" target="__blank" class="btn">
+                Click to download the Financial report</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-6 col-sm-10 ir-chart-main">
+            <div class="image ir-chart mt-xl-0 mt-4">
+              <canvas id="revenueProfitChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------- Footer Start --------->
+    <footer>
+      <div class="container">
+        <div class="container">
+          <div class="address-sec text-center">
+            <h2>E-Nexco India Private Limited</h2>
+            <p>
+              Office No. 318, Bestech Chambers (Radisson Suites), B-Block,
+              Sushant Lok, Phase-1, Gurgaon, 122002, Haryana, India
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-12">
+              <ul>
+                <li>
+                  <a href=" https://www.e-nexco.co.jp/en/site_info/"
+                    >About using this site
+                  </a>
+                </li>
+                <li>
+                  <a href=" https://www.e-nexco.co.jp/en/privacy_policy/"
+                    >Privacy Protection
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.e-nexco.co.jp/en/security_policy/"
+                    >Information Security Basic Philosophy
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.e-nexco.co.jp/en/link/"
+                    >Related Groups Link Collection</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-lg-12">
+              <div class="copyright">
+                &copy;Copyright 2019. All rights Reserved
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--------- Footer End --------->
+
+    <!----- Modal ---------->
+    <div class="modal fade" id="alert-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body text-center">
+            <h1>Coming Soon..</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mask" class=""></div>
+
+    <!--------- External Script ------->
+    <script src="js/main.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!--------- Javascript Start --------->
+    <script type="text/javascript"></script>
+    <script> 
+        const ctx = document
+    .getElementById('revenueProfitChart')
+    .getContext('2d');
+
+  const data = {
+    labels: [
+      "FY2019-2020",
+      "FY2020-2021",
+      "FY2021-2022",
+      "FY2022-2023",
+      "FY2023-2024",
+      "FY2024-2025"
+    ],
+    datasets: [
+      {
+        label: 'Revenue',
+        type: 'bar',
+        data: [
+          24405705,
+          14221400,
+          51984630,
+          69915570,
+          87504750,
+          10471710
+        ],
+        backgroundColor: 'rgba(144, 238, 144, 0.7)',
+        borderColor: 'rgba(144, 238, 144, 1)',
+        borderWidth: 2,
+        hoverBackgroundColor: 'rgba(34, 139, 34, 0.8)'
+      },
+      {
+        label: 'Profit/Loss',
+        type: 'line',
+        data: [
+          3138780,
+          -20484650,
+          -17771030,
+          -42662830,
+          853320,
+          26409830
+        ],
+        borderColor: 'green',
+        backgroundColor: 'green',
+        fill: false,
+        tension: 0.4,
+        pointRadius: 5,
+        pointHoverRadius: 8,
+        hitRadius: 12,
+        pointBackgroundColor: 'white',
+        pointBorderColor: 'green',
+        pointHoverBackgroundColor: 'green',
+        pointHoverBorderColor: 'white'
+      }
+    ]
+  };
+
+      const options = {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: {
+              font: {
+                size: 14,
+              },
+            },
+          },
+          tooltip: {
+            enabled: false, // Disable default tooltip
+            external: function (context) {
+              let tooltipEl = document.getElementById("chart-tooltip");
+
+              // Create tooltip element if it doesn’t exist
+              if (!tooltipEl) {
+                tooltipEl = document.createElement("div");
+                tooltipEl.id = "chart-tooltip";
+                tooltipEl.innerHTML = '<div class="tooltip-box"></div>';
+                document.body.appendChild(tooltipEl);
+              }
+
+              const tooltipBox = tooltipEl.querySelector(".tooltip-box");
+              const tooltipModel = context.tooltip;
+
+              // Hide if no tooltip
+              if (tooltipModel.opacity === 0) {
+                tooltipEl.style.opacity = 0;
+                return;
+              }
+
+              // Set text content
+              if (tooltipModel.body) {
+                const title = tooltipModel.title[0];
+                let value = tooltipModel.body[0].lines[0].split(": ")[1];
+
+                // Ensure value is a full number and prepend "INR"
+                value = `INR ${value}`;
+
+                // Get the correct profit/loss value for the hovered index
+                const dataIndex = tooltipModel.dataPoints[0].dataIndex;
+                const currentProfitLoss = data.datasets[1].data[dataIndex];
+                const previousProfitLoss =
+                  dataIndex > 0 ? data.datasets[1].data[dataIndex - 1] : null;
+
+                let changeLabel = "No Change"; // Default to "No Change"
+                if (previousProfitLoss !== null) {
+                  if (currentProfitLoss > previousProfitLoss) {
+                    changeLabel = "Increased";
+                  } else if (currentProfitLoss < previousProfitLoss) {
+                    changeLabel = "Decreased";
+                  }
+                }
+
+                tooltipBox.innerHTML = `
+                        <div class="tooltip-header">${title}</div>
+                        <div class="tooltip-value">${value}</div>
+                        <div class="tooltip-change ${
+                          changeLabel === "Decreased"
+                            ? "negative"
+                            : changeLabel === "Increased"
+                            ? "positive"
+                            : ""
+                        }">
+                            ${changeLabel}
+                        </div>
+                    `;
+              }
+
+              // Position tooltip
+              const position = context.chart.canvas.getBoundingClientRect();
+              tooltipEl.style.opacity = 1;
+              tooltipEl.style.position = "absolute";
+              tooltipEl.style.pointerEvents = "none";
+
+              // Get index of hovered point
+              const dataIndex = tooltipModel.dataPoints[0].dataIndex;
+              const isLastPoint = dataIndex === data.labels.length - 1;
+
+              if (isLastPoint) {
+                tooltipEl.style.left = "auto"; // Remove left positioning for last child
+                tooltipEl.style.right = "0"; // Align to the right for last child
+              } else {
+                tooltipEl.style.left =
+                  position.left +
+                  window.pageXOffset +
+                  tooltipModel.caretX +
+                  "px";
+                tooltipEl.style.right = "auto"; // Reset right positioning for other points
+              }
+
+              tooltipEl.style.top =
+                position.top + window.pageYOffset + tooltipModel.caretY + "px";
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: false,
+            ticks: {
+              font: {
+                size: 10,
+              },
+              callback: function (value) {
+                return `INR ${value.toLocaleString()}`; // Add INR and format with commas
+              },
+            },
+          },
+          x: {
+            ticks: {
+              font: {
+                size: 10,
+              },
+            },
+          },
+        },
+      };
+
+      new Chart(ctx, {
+        type: "bar",
+        data: data,
+        options: options,
+      });
+    </script>
+    <!--------- Javascript End --------->
+  </body>
+</html>
