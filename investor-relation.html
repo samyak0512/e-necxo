@@ -187,11 +187,8 @@
     <script src="js/custom.js"></script>
 
     <!--------- Javascript Start --------->
-    <script type="text/javascript"></script>
-    <script> 
-        const ctx = document
-    .getElementById('revenueProfitChart')
-    .getContext('2d');
+   <script> 
+  const ctx = document.getElementById('revenueProfitChart').getContext('2d');
 
   const data = {
     labels: [
@@ -204,24 +201,9 @@
     ],
     datasets: [
       {
-        label: 'Revenue',
-        type: 'bar',
-        data: [
-          24405705,
-          14221400,
-          51984630,
-          69915570,
-          87504750,
-          108681710
-        ],
-        backgroundColor: 'rgba(144, 238, 144, 0.7)',
-        borderColor: 'rgba(144, 238, 144, 1)',
-        borderWidth: 2,
-        hoverBackgroundColor: 'rgba(34, 139, 34, 0.8)'
-      },
-      {
         label: 'Profit/Loss',
         type: 'line',
+        order: 1, // <--- Lower number means it is drawn LAST (on top)
         data: [
           3138780,
           -20484650,
@@ -241,9 +223,29 @@
         pointBorderColor: 'green',
         pointHoverBackgroundColor: 'green',
         pointHoverBorderColor: 'white'
+      },
+      {
+        label: 'Revenue',
+        type: 'bar',
+        order: 2, // <--- Higher number means it is drawn FIRST (behind)
+        data: [
+          24405705,
+          14221400,
+          51984630,
+          69915570,
+          87504750,
+          108681710
+        ],
+        backgroundColor: 'rgba(144, 238, 144, 0.7)',
+        borderColor: 'rgba(144, 238, 144, 1)',
+        borderWidth: 2,
+        hoverBackgroundColor: 'rgba(34, 139, 34, 0.8)'
       }
     ]
   };
+
+  // ... rest of your options and new Chart() code remains the same
+
 
       const options = {
         responsive: true,
@@ -373,5 +375,6 @@
     <!--------- Javascript End --------->
   </body>
 </html>
+
 
 
