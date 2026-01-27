@@ -289,9 +289,15 @@
 
                 // Get the correct profit/loss value for the hovered index
                 const dataIndex = tooltipModel.dataPoints[0].dataIndex;
-                const currentProfitLoss = data.datasets[1].data[dataIndex];
-                const previousProfitLoss =
-                  dataIndex > 0 ? data.datasets[1].data[dataIndex - 1] : null;
+                // PREVIOUS VERSION
+                // const currentProfitLoss = data.datasets[1].data[dataIndex];
+                // const previousProfitLoss =
+                //   dataIndex > 0 ? data.datasets[1].data[dataIndex - 1] : null;
+
+                // NEW VERSION
+                const currentProfitLoss = data.datasets[0].data[dataIndex];
+                const previousProfitLoss = dataIndex > 0 ? data.datasets[0].data[dataIndex - 1] : null;
+                
 
                 let changeLabel = "No Change"; // Default to "No Change"
                 if (previousProfitLoss !== null) {
